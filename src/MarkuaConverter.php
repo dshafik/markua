@@ -18,7 +18,7 @@ use League\CommonMark\CommonMarkConverter;
 use League\CommonMark\DocParser;
 use League\CommonMark\Environment;
 use League\CommonMark\HtmlRenderer;
-use League\Markua\Environment\Markua;
+use League\Markua\Extension\MarkuaExtension;
 
 /**
  * Converts Markua-compatible Markdown to HTML.
@@ -30,7 +30,9 @@ class MarkuaConverter extends CommonMarkConverter
      */
     public function __construct()
     {
-        $environment = Environment::createEnvironment(new Markua());
+        $environment = new Environment();
+        $environment->addExtension(new MarkuaExtension());
+        
         $this->docParser = new DocParser($environment);
         $this->htmlRenderer = new HtmlRenderer($environment);
     }

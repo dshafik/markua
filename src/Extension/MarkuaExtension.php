@@ -1,12 +1,12 @@
 <?php
-namespace League\Markua\Environment;
+namespace League\Markua\Extension;
 
 use League\CommonMark\Block\Parser as BlockParser;
-use League\CommonMark\Environment\CommonMark;
+use League\CommonMark\Extension\CommonMarkCoreExtension;
 use League\Markua\Block\Parser as MarkuaBlockParser;
 use League\Markua\Block\Renderer as MarkuaBlockRenderer;
 
-class Markua extends CommonMark {
+class MarkuaExtension extends CommonMarkCoreExtension {
 
     public function getBlockParsers()
     {
@@ -33,5 +33,9 @@ class Markua extends CommonMark {
         $renderers['League\Markua\Block\Element\IconBlock'] = new MarkuaBlockRenderer\IconBlockRenderer();
 
         return $renderers;
+    }
+    
+    public function getName() {
+        return 'markua';
     }
 }
