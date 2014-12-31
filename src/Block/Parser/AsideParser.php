@@ -35,9 +35,8 @@ class AsideParser extends AbstractBlockParser
         }
 
         $cursor->advanceToFirstNonSpace();
-        $cursor->advance();
-        if ($cursor->getCharacter() === '>') {
-            $cursor->advance();
+        if ($cursor->peek() === '>') {
+            $cursor->advanceBy(2);
             if ($cursor->getCharacter() === ' ') {
                 $cursor->advance();
             }

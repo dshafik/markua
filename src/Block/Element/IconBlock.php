@@ -50,7 +50,7 @@ class IconBlock extends Aside
     {
         if ($cursor->getIndent() <= 3 && in_array($cursor->getFirstNonSpaceCharacter(), static::getIconBlockTypes())) {
             $cursor->advanceToFirstNonSpace();
-            if ($cursor->getCharacter($cursor->getPosition() + 1) === '>') {
+            if ($cursor->peek() === '>') {
                 $cursor->advanceBy(2);
                 if ($cursor->getCharacter() === ' ') {
                     $cursor->advance();

@@ -58,7 +58,7 @@ class Aside extends AbstractBlock
     {
         if ($cursor->getIndent() <= 3 && $cursor->getFirstNonSpaceCharacter() == 'A') {
             $cursor->advanceToFirstNonSpace();
-            if ($cursor->getCharacter($cursor->getPosition() + 1) === '>') {
+            if ($cursor->peek() === '>') {
                 $cursor->advanceBy(2);
                 if ($cursor->getCharacter() === ' ') {
                     $cursor->advance();
