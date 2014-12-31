@@ -14,9 +14,6 @@
 
 namespace League\Markua\Block\Element;
 
-use League\CommonMark\Block\Element\AbstractBlock;
-use League\CommonMark\Block\Element\Paragraph;
-use League\CommonMark\ContextInterface;
 use League\CommonMark\Cursor;
 
 class IconBlock extends Aside
@@ -31,12 +28,18 @@ class IconBlock extends Aside
         parent::__construct();
         $this->type = $type;
     }
-    
+
+    /**
+     * @return string
+     */
     public function getType()
     {
         return $this->type;
     }
-    
+
+    /**
+     * @return string
+     */
     public function getTypeName()
     {
         $types = array_flip(static::getIconBlockTypes());
