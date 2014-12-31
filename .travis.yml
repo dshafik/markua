@@ -14,5 +14,6 @@ install: travis_retry composer install --no-interaction --prefer-source
 script: phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
+  - CODECLIMATE_REPO_TOKEN=7c08cfcecc1cd3ba1703f5b5336ed580aa4007d0feff1ac87efee9a3933e5e31 ./vendor/bin/test-reporter
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
