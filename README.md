@@ -1,6 +1,6 @@
 # Markua
 
-[![Build Status](https://travis-ci.org/dshafik/markua.svg?branch=master)](https://travis-ci.org/dshafik/markua)
+[![Build Status](https://scrutinizer-ci.com/g/dshafik/markua/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/build-status/master)
 [![Code Climate](https://codeclimate.com/github/dshafik/markua/badges/gpa.svg)](https://codeclimate.com/github/dshafik/markua)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dshafik/markua/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/dshafik/markua/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
