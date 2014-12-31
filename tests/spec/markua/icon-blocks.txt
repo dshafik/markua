@@ -1,0 +1,244 @@
+=== Name ===
+Icon Blocks: Discussion — Single Line
+=== Markdown ===
+D> A discussion
+=== Result ===
+<aside class="discussion">
+<p>A discussion</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Discussion — Multi-line
+=== Markdown ===
+D> A discussion  
+D> With multiple lines
+=== Result ===
+<aside class="discussion">
+<p>A discussion<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Discussion — Multiple Paragraphs
+=== Markdown ===
+D> A discussion
+D>
+D> With multiple paragraphs
+=== Result ===
+<aside class="discussion">
+<p>A discussion</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Error — Single Line
+=== Markdown ===
+E> An error
+=== Result ===
+<aside class="error">
+<p>An error</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Error — Multi-line
+=== Markdown ===
+E> An error  
+E> With multiple lines
+=== Result ===
+<aside class="error">
+<p>An error<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Error — Multiple Paragraphs
+=== Markdown ===
+E> An error
+E>
+E> With multiple paragraphs
+=== Result ===
+<aside class="error">
+<p>An error</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Information — Single Line
+=== Markdown ===
+I> Some information
+=== Result ===
+<aside class="info">
+<p>Some information</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Information — Multi-line
+=== Markdown ===
+I> Some information  
+I> With multiple lines
+=== Result ===
+<aside class="info">
+<p>Some information<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Information — Multiple Paragraphs
+=== Markdown ===
+I> Some information
+I>
+I> With multiple paragraphs
+=== Result ===
+<aside class="info">
+<p>Some information</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Question — Single Line
+=== Markdown ===
+Q> A question
+=== Result ===
+<aside class="question">
+<p>A question</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Question — Multi-line
+=== Markdown ===
+Q> A question  
+Q> With multiple lines
+=== Result ===
+<aside class="question">
+<p>A question<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Question — Multiple Paragraphs
+=== Markdown ===
+Q> A question
+Q>
+Q> With multiple paragraphs
+=== Result ===
+<aside class="question">
+<p>A question</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Tip — Single Line
+=== Markdown ===
+T> A tip
+=== Result ===
+<aside class="tip">
+<p>A tip</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Tip — Multi-line
+=== Markdown ===
+T> A tip  
+T> With multiple lines
+=== Result ===
+<aside class="tip">
+<p>A tip<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Tip — Multiple Paragraphs
+=== Markdown ===
+T> A tip
+T>
+T> With multiple paragraphs
+=== Result ===
+<aside class="tip">
+<p>A tip</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Warning — Single Line
+=== Markdown ===
+W> A warning
+=== Result ===
+<aside class="warning">
+<p>A warning</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Warning — Multi-line
+=== Markdown ===
+W> A warning  
+W> With multiple lines
+=== Result ===
+<aside class="warning">
+<p>A warning<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Warning — Multiple Paragraphs
+=== Markdown ===
+W> A warning
+W>
+W> With multiple paragraphs
+=== Result ===
+<aside class="warning">
+<p>A warning</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Exercise — Single Line
+=== Markdown ===
+X> An exercise
+=== Result ===
+<aside class="exercise">
+<p>An exercise</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Exercise — Multi-line
+=== Markdown ===
+X> An exercise  
+X> With multiple lines
+=== Result ===
+<aside class="exercise">
+<p>An exercise<br />
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
+Icon Blocks: Exercise — Multiple Paragraphs
+=== Markdown ===
+X> An exercise
+X>
+X> With multiple paragraphs
+=== Result ===
+<aside class="exercise">
+<p>An exercise</p>
+<p>With multiple paragraphs</p>
+</aside>
+=== End ===

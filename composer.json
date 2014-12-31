@@ -1,0 +1,39 @@
+{
+    "name": "league/markua",
+    "type": "library",
+    "description": "Markdown parser for PHP based on the Markua spec",
+    "keywords": ["markdown","parser","markua"],
+    "homepage": "https://github.com/thephpleague/markua",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Davey Shafik",
+            "email": "me@daveyshafik.com",
+            "homepage": "http://daveyshafik.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:dshafik/commonmark.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+	    "league/commonmark": "dev-markua"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "League\\Markua\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "League\\Markua\\Tests\\": "tests/"
+        }
+    }
+}
