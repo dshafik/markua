@@ -1,7 +1,8 @@
 # Markua
 
 [![Build Status](https://travis-ci.org/dshafik/markua.svg?branch=master)](https://travis-ci.org/dshafik/markua)
-
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dshafik/markua/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/dshafik/markua/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
 
 **league/markua** is a Markdown parser for PHP which intends to support the full [Markua] spec.  The Markua spec is [still evolving](https://leanpub.com/markua/read).
 
