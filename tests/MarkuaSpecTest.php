@@ -1,9 +1,6 @@
 <?php
 namespace League\Markua\Tests;
 
-use League\CommonMark\DocParser;
-use League\CommonMark\Environment;
-use League\CommonMark\HtmlRenderer;
 use League\Markua\MarkuaConverter;
 
 /**
