@@ -43,22 +43,20 @@ class IconBlock extends Aside
     public function getTypeName()
     {
         $types = array_flip(static::getIconBlockTypes());
-        return $types[$this->type];
+        return $types[$this->getType()];
     }
     
     public function matchesNextLine(Cursor $cursor)
     {
         if ($cursor->getIndent() <= 3 && in_array($cursor->getFirstNonSpaceCharacter(), static::getIconBlockTypes())) {
             $cursor->advanceToFirstNonSpace();
-            $cursor->advance();
-            if ($cursor->getCharacter() === '>') {
-                $cursor->advance();
+            if ($cursor->getCharacter($cursor->getPosition() + 1) === '>') {
+                $cursor->advanceBy(2);
                 if ($cursor->getCharacter() === ' ') {
                     $cursor->advance();
                 }
+                return true;
             }
-
-            return true;
         }
 
         return false;

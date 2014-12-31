@@ -34,6 +34,33 @@ D> With multiple paragraphs
 === End ===
 
 === Name ===
+Icon Blocks: Discussion — Following Content
+=== Markdown ===
+D> A discussion
+
+Not a discussion
+=== Result ===
+<aside class="discussion">
+<p>A discussion</p>
+</aside>
+<p>Not a discussion</p>
+=== End ===
+
+=== Name ===
+Icon Blocks: Discussion — Follow-on content
+=== Markdown ===
+D> A discussion  
+Also part of the discussion  
+And this
+=== Result ===
+<aside class="discussion">
+<p>A discussion<br />
+Also part of the discussion<br />
+And this</p>
+</aside>
+=== End ===
+
+=== Name ===
 Icon Blocks: Error — Single Line
 === Markdown ===
 E> An error

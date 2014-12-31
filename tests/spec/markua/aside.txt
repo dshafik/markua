@@ -9,6 +9,18 @@ A> An aside
 === End ===
 
 === Name ===
+Run-on Aside
+=== Markdown ===
+A> An aside
+A> With multiple lines
+=== Result ===
+<aside>
+<p>An aside
+With multiple lines</p>
+</aside>
+=== End ===
+
+=== Name ===
 Multi-line Aside
 === Markdown ===
 A> An aside  
@@ -31,4 +43,43 @@ A> With multiple paragraphs
 <p>An aside</p>
 <p>With multiple paragraphs</p>
 </aside>
+=== End ===
+
+=== Name ===
+Aside with other content
+=== Markdown ===
+A> ### Aside Title
+A> With a paragraph that has **bold**, *italic* and `code`.
+=== Result ===
+<aside>
+<h3>Aside Title</h3>
+<p>With a paragraph that has <strong>bold</strong>, <em>italic</em> and <code>code</code>.</p>
+</aside>
+=== End ===
+
+=== Name ===
+Aside with follow-on content
+=== Markdown ===
+A> An aside  
+Also part of the aside  
+And this
+=== Result ===
+<aside>
+<p>An aside<br />
+Also part of the aside<br />
+And this</p>
+</aside>
+=== End ===
+
+=== Name ===
+Aside with following content
+=== Markdown ===
+A> An aside
+
+Not an aside
+=== Result ===
+<aside>
+<p>An aside</p>
+</aside>
+<p>Not an aside</p>
 === End ===
