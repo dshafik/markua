@@ -27,7 +27,10 @@ class ExtensionTest extends \PHPUnit_Framework_TestCase {
     public function testConvertor()
     {
         $convertor = new MarkuaConverter();
-        $this->assertEquals('markua', $convertor->getDocParser()->getEnvironment()->getExtensions()[0]->getName());
-        $this->assertEquals('markua', $convertor->getHtmlRenderer()->getEnvironment()->getExtensions()[0]->getName());
+        $extensions = $convertor->getDocParser()->getEnvironment()->getExtensions();
+        $this->assertEquals('markua', $extensions[0]->getName());
+        
+        $extensions = $convertor->getHtmlRenderer()->getEnvironment()->getExtensions();
+        $this->assertEquals('markua', $extensions[0]->getName());
     }
 }
