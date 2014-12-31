@@ -19,13 +19,12 @@ use League\CommonMark\Block\Element\AbstractBlock;
 use League\CommonMark\Block\Renderer\BlockRendererInterface;
 use League\CommonMark\HtmlElement;
 use League\CommonMark\HtmlRenderer;
-use League\Markua\Block\Element\Aside;
 use League\Markua\Block\Element\IconBlock;
 
-class IconBlockRenderer implements BlockRendererInterface
+class IconBlockRenderer extends AsideRenderer implements BlockRendererInterface
 {
     /**
-     * @param Aside $block
+     * @param IconBlock $block
      * @param HtmlRenderer $htmlRenderer
      * @param bool $inTightList
      *
@@ -37,16 +36,9 @@ class IconBlockRenderer implements BlockRendererInterface
             throw new \InvalidArgumentException('Incompatible block type: ' . get_class($block));
         }
 
-        $filling = $htmlRenderer->renderBlocks($block->getChildren());
+        $htmlBlock = parent::render($block, $htmlRenderer, $inTightList);
+        $htmlBlock->setAttribute('class', $block->getTypeName());
         
-        if ($filling === '') {
-            return new HtmlElement('aside', array('class' => $block->getTypeName()), $htmlRenderer->getOption('innerSeparator'));
-        }
-
-        return new HtmlElement(
-            'aside',
-            array('class' => $block->getTypeName()),
-            $htmlRenderer->getOption('innerSeparator') . $filling . $htmlRenderer->getOption('innerSeparator')
-        );
+        return $htmlBlock;
     }
 }
