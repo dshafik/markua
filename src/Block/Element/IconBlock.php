@@ -22,7 +22,10 @@ use League\CommonMark\Cursor;
 class IconBlock extends AbstractBlock
 {
     protected $type;
-    
+
+    /**
+     * @param string $type Icon Block type (e.g. I for Info)
+     */
     public function __construct($type)
     {
         parent::__construct();
